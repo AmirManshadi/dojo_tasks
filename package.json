@@ -1,5 +1,5 @@
 {
-  "name": "chakra-ui-crash-course",
+  "name": "dojo-task",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,6 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.19",
+    "@chakra-ui/react": "^2.7.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "framer-motion": "^10.12.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.6.1"
