@@ -14,12 +14,12 @@ export default function RootLayout() {
 			>
 				<Sidebar />
 			</GridItem>
-			<GridItem 
-        colStart={[1, 3, 2]} 
-        colEnd={[7]} 
-        rowStart={[1]} 
-        rowEnd={2}
-      >
+			<GridItem
+				colStart={[1, 3, 2]}
+				colEnd={[7]}
+				rowStart={[1]}
+				rowEnd={[2, null]}
+			>
 				<Navbar />
 			</GridItem>
 			<GridItem

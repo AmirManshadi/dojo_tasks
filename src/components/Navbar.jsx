@@ -33,7 +33,9 @@ export default function Navbar() {
 			<Spacer />
 			<HStack spacing={4}>
 				<Avatar name="Amir" bg="blue.200" src="/public/img/mario.png"></Avatar>
-				<Text display={["none", null, "block"]} fontWeight="bold">AmirHossein</Text>
+				<Text display={["none", null, "block"]} fontWeight="bold">
+					AmirHossein
+				</Text>
 				<Button colorScheme="blue" onClick={handleClick}>
 					logout
 				</Button>
