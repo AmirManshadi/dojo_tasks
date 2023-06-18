@@ -1,5 +1,5 @@
 import { AtSignIcon, CalendarIcon, EditIcon } from "@chakra-ui/icons"
-import { Flex, List, ListIcon, ListItem, Text } from "@chakra-ui/react"
+import { Divider, Flex, List, ListIcon, ListItem, Text } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 
 export default function Sidebar() {
@@ -27,6 +27,10 @@ export default function Sidebar() {
 				<ListIcon as={CalendarIcon} />
 				<Text>Dashboard</Text>
 			</ListItem>
+			<Divider
+				transform={["rotate(90deg)", "rotate(0)"]}
+				w={["50px", "100%"]}
+			/>
 			<ListItem
 				as={Link}
 				to="/create"
@@ -38,6 +42,10 @@ export default function Sidebar() {
 				<ListIcon as={EditIcon} />
 				<Text>Create</Text>
 			</ListItem>
+			<Divider
+				transform={["rotate(90deg)", "rotate(0)"]}
+				w={["50px", "100%"]}
+			/>
 			<ListItem
 				as={Link}
 				to="/profile"
