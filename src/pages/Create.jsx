@@ -13,10 +13,6 @@ import {
 } from "@chakra-ui/react"
 import { useRef } from "react"
 
-export function CreateAction({ request }) {
-	return null
-}
-
 export default function Create() {
 	const toast = useToast()
 	const formRef = useRef()

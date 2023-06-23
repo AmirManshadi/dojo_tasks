@@ -10,18 +10,11 @@ import {
 	TabPanels,
 	Tabs,
 } from "@chakra-ui/react"
-import { useLoaderData } from "react-router-dom"
+import tasks from "../data/db"
 import Task from "../components/Task"
 
-export async function ProfileLoader() {
-	const tasks = await fetch("http://localhost:3000/tasks").then(res =>
-		res.json()
-	)
-	return tasks.filter(task => task.author.toLowerCase() === "mario")
-}
-
 export default function Profile() {
-	const tasks = useLoaderData()
+	const userTasks = tasks.filter(task => task.author.toLowerCase() === "mario")
 	return (
 		<Tabs isLazy colorScheme="blue" variant="enclosed-colored" m="6" p="4">
 			<TabList>
@@ -47,7 +40,7 @@ export default function Profile() {
 				</TabPanel>
 				<TabPanel>
 					<SimpleGrid minChildWidth="60" alignItems={"stretch"} spacing={4}>
-						{tasks.map(task => (
+						{userTasks.map(task => (
 							<Task key={task.id} task={task} />
 						))}
 					</SimpleGrid>
