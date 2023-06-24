@@ -32,7 +32,7 @@ export default function Navbar() {
 			</Heading>
 			<Spacer />
 			<HStack spacing={4}>
-				<Avatar name="Amir" bg="blue.200" src="/public/img/mario.png"></Avatar>
+				<Avatar name="Amir" bg="blue.200" src="/img/mario.png"></Avatar>
 				<Text display={["none", null, "block"]} fontWeight="bold">
 					AmirHossein
 				</Text>
