@@ -1,6 +1,6 @@
 import { AtSignIcon, CalendarIcon, EditIcon } from "@chakra-ui/icons"
 import { Divider, Flex, List, ListIcon, ListItem, Text } from "@chakra-ui/react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export default function Sidebar() {
 	return (
@@ -13,11 +13,11 @@ export default function Sidebar() {
 			direction={["row", "column"]}
 			justify={["space-around", "start"]}
 			align={["center", "start"]}
-			h={[null, "100vh"]}
+			h={[null, "100dvh"]}
 			fontSize={["md", null, "lg"]}
 		>
 			<ListItem
-				as={Link}
+				as={NavLink}
 				to="/"
 				display="flex"
 				alignItems="center"
@@ -32,7 +32,7 @@ export default function Sidebar() {
 				w={["50px", "100%"]}
 			/>
 			<ListItem
-				as={Link}
+				as={NavLink}
 				to="/create"
 				display="flex"
 				alignItems="center"
@@ -47,7 +47,7 @@ export default function Sidebar() {
 				w={["50px", "100%"]}
 			/>
 			<ListItem
-				as={Link}
+				as={NavLink}
 				to="/profile"
 				display="flex"
 				alignItems="center"
